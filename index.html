@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,11 +11,44 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
-<body>
-    <main>
 
+<body>
+    <main class="flex justify-center">
+        <div class="mockup-phone border-primary">
+            <div class="camera"></div>
+            <div class="display">
+                <div class="artboard artboard-demo phone-3">
+                    <div class="hero bg-base-200 min-h-screen">
+                        <div class="hero-content flex-col lg:flex-row-reverse">
+                            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                                <form class="card-body">
+                                    <div class="form-control">
+                                        <label class="label">
+                                            <span class="label-text">Phone Number</span>
+                                        </label>
+                                        <input id="login-phone-number" type="text" placeholder="Your Phone Number" class="input input-bordered"
+                                            required />
+                                    </div>
+                                    <div class="form-control">
+                                        <label class="label">
+                                            <span class="label-text">PIN</span>
+                                        </label>
+                                        <input id="login-pin" type="password" placeholder="Type Your PIN" class="input input-bordered"
+                                            required />
+                                    </div>
+                                    <div class="form-control mt-6">
+                                        <button id="login-btn" class="btn btn-primary">Login</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
-    
+
     <script src="./JS/pyoo.js"></script>
 </body>
+
 </html>
