@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pyoo MFS Home Page</title>
+
+    <!-- daisyUI & tailwind cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <main class="flex justify-center">
+        <div class="mockup-phone border-primary">
+            <div class="camera"></div>
+            <div class="display">
+                <div class="artboard artboard-demo phone-3">
+
+                    <div class="stats shadow items-center gap-6 px-10">
+                        <div class="stat">
+                            <div class="stat-title text-4xl">Balance</div>
+                            <div id="balance" class="stat-value text-4xl">5000</div>
+                        </div>
+                        <div class="border-none">
+                            <button id="logout-btn" class="btn">Logout</button>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+
+
+                    <div class="card bg-base-100 shadow-xl">
+                        <div class="card-body flex-row justify-around gap-7">
+                            <div><button id="add-money-btn" class="btn btn-primary text-xl">Add Money</button></div>
+                            <div><button id="cash-out-btn" class="btn btn-primary text-xl">CashOut</button></div>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <!-- Add Money start here -->
+                    <div id="add-money-container" class="hero bg-base-200 hidden">
+                        <div class="hero-content flex-col lg:flex-row-reverse">
+
+                            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                                <form class="card-body">
+                                    <div class="form-control">
+                                        <label class="label">
+                                            <span class="label-text">Amount</span>
+                                        </label>
+                                        <input id="amount-add" type="number" placeholder="Type Your Amount" class="input input-bordered"
+                                            required />
+                                    </div>
+                                    <div class="form-control">
+                                        <label class="label">
+                                            <span class="label-text">PIN</span>
+                                        </label>
+                                        <input id="add-money-pin" type="password" placeholder="PIN" class="input input-bordered"
+                                            required />
+                                    </div>
+                                    <div class="form-control mt-6">
+                                        <button id="add-money" class="btn btn-primary">Add Money</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Money ends here -->
+
+                    <!-- CashOut starts here -->
+                    <div id="cash-out-container" class="hero bg-base-200 hidden">
+                        <div class="hero-content flex-col lg:flex-row-reverse">
+
+                            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                                <form class="card-body">
+                                    <div class="form-control">
+                                        <label class="label">
+                                            <span class="label-text">Agent Number</span>
+                                        </label>
+                                        <input type="tel" placeholder="Agent Number" class="input input-bordered"
+                                            required />
+                                    </div>
+                                    <div class="form-control">
+                                        <label class="label">
+                                            <span class="label-text">PIN</span>
+                                        </label>
+                                        <input type="password" placeholder="PIN" class="input input-bordered"
+                                            required />
+                                    </div>
+                                    <div class="form-control mt-6">
+                                        <button class="btn btn-primary">CashOut</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CashOut ends here -->
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./JS/home.js"></script>
+</body>
+
+</html>
